@@ -48,6 +48,8 @@ public class GameFlowManager : MonoBehaviour
     string m_SceneToLoad;
     float elapsedTimeBeforeEndScene = 0;
 
+    [HideInInspector] public float braking;
+
     void Start()
     {
         if (autoFindKarts)
@@ -184,4 +186,13 @@ public class GameFlowManager : MonoBehaviour
             loseDisplayMessage.gameObject.SetActive(true);
         }
     }
+    public void brake()
+    {
+        braking = -1;
+    }
+    public void debrake()
+    {
+        braking = 0;
+    }
+
 }
