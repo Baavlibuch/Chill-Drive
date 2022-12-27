@@ -14,7 +14,7 @@ namespace KartGame.KartSystems {
         public override InputData GenerateInput() {
             return new InputData
             {
-                Accelerate = Input.GetButton(AccelerateButtonName),
+                Accelerate = flowManager.acceleration == 1? true : false,
                 Brake = flowManager.braking == -1 ? true : false,
                 TurnInput = Input.acceleration.x*sensitivity
             };
