@@ -48,7 +48,7 @@ public class GameFlowManager : MonoBehaviour
     string m_SceneToLoad;
     float elapsedTimeBeforeEndScene = 0;
 
-    [HideInInspector] public float braking;
+    [HideInInspector] public float acceleration,braking;
 
     void Start()
     {
@@ -186,6 +186,16 @@ public class GameFlowManager : MonoBehaviour
             loseDisplayMessage.gameObject.SetActive(true);
         }
     }
+
+    public void accelerate()
+    {
+        acceleration = 1;
+    }
+    public void deaccelerate()
+    {
+        acceleration = 0;
+    }
+
     public void brake()
     {
         braking = -1;
