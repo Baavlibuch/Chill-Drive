@@ -6,10 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Karting/Scenes/Scene1.unity
+    path: Assets/Karting/Scenes/Scene0.unity
+    guid: b3a44d5eaee56104f93f888a5351670d
+  - enabled: 1
+    path: Assets/Karting/Scenes/Scene2.unity
     guid: 92786e23da2af4a4f8803aaf44c47121
   - enabled: 1
-    path: Assets/Karting/Scenes/Scene0.unity
+    path: Assets/Karting/Scenes/Scene1.unity
     guid: 3c72d911bbfe5b7478b031a793263158
   - enabled: 1
     path: Assets/Karting/Scenes/LoseScene.unity
